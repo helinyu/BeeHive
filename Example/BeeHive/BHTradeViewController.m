@@ -46,7 +46,6 @@
 
 -(void)click:(UIButton *)btn
 {
-    
     id<TradeServiceProtocol> obj = [[BeeHive shareInstance] createService:@protocol(TradeServiceProtocol)];
     if ([obj isKindOfClass:[UIViewController class]]) {
         obj.itemId = @"12313231231";
